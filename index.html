@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Profile Card Template : Tailwind Toolbox</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <style>
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider">
+    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+        <!--Main Col-->
+        <div id="profile"
+            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+            <div class="p-4 md:p-12 text-center lg:text-left">
+                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                    style="background-image: url('data:image/webp;base64,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')"></div>
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Poralla Chandu</h1>
+                <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+                <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg
+                        class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                    </svg> Computer Science Student At JNTUACEK </p>
+                <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg
+                        class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
+                    </svg> Your Location - 25.0000° N, 71.0000° W</p>
+                <p class="pt-8 text-sm">
+                    Hey there, I'm PorallaChandu, a passionate tech enthusiast with a B.Tech degree and a knack for
+                    building cutting-edge digital experiences. With expertise in React, HTML, CSS, Java Spring Boot,
+                    MySQL, PostgreSQL, networking skills, I thrive on turning ideas into reality in the digital
+                    landscape. Whether it's crafting sleek user interfaces, architecting robust backend systems, or
+                    optimizing network performance, I'm always up for the challenge. When I'm not immersed in code,
+                    you can find me exploring the latest tech trends or unwinding with a good book. Let's connect and
+                    bring your next project to life!.
+                </p>
+                <div class="pt-12 pb-8">
+                    <button
+                        class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                        Get In Touch
+                    </button>
+                </div>
+                <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+                    <a class="link" href="#" data-tippy-content="@facebook_handle"><svg
+                            class="h-6 fill-current text-gray-600 hover:text-green-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>Facebook</title>
+                            <path
+                                d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+                        </svg></a>
+                    <a class="link" href="#" data-tippy-content="@twitter_handle"><svg
+                            class="h-6 fill-current text-gray-600 hover:text-green-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>Twitter</title>
+                            <path
+                                d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                        </svg></a>
+                    <a class="link" href="#" data-tippy-content="@github_handle"><svg
+                            class="h-6 fill-current text-gray-600 hover:text-green-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>GitHub</title>
+                            <path fill-rule="evenodd"
+                                d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.385.6.111.793-.261.793-.578 0-.285-.01-1.04-.015-2.042-3.338.724-4.042-1.61-4.042-1.61C4.48 18.22 3.68 17.8 3.68 17.8c-1.08-.738.083-.723.083-.723 1.194.084 1.823 1.23 1.823 1.23 1.06 1.817 2.785 1.292 3.46.992.107-.764.415-1.292.754-1.59-2.647-.3-5.42-.646-6.508-.294-.955.578-.935.578-.935.637.045.97.653.97.653.565.967 1.477.688 1.838.525.057-.415.218-.688.397-.848-1.393-.158-2.854-.697-2.854-3.098 0-.684.243-1.243.644-1.681-.064-.16-.28-.797.062-1.657 0 0 .525-.168 1.723.64C7.64 5.084 8.36 4.83 9.14 4.77c.553-.627 1.435-1.04 2.42-1.04.983 0 1.867.414 2.42 1.04.78.06 1.5.314 2.185.898 1.198-.808 1.722-.64 1.722-.64.342.86.128 1.497.063 1.657.402.438.643.997.643 1.681 0 2.405-1.463 2.938-2.862 3.09.225.193.426.578.426 1.165 0 .843-.008 1.523-.008 1.731 0 .32.192.694.801.576C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                    <a class="link" href="#" data-tippy-content="@linkedin_handle"><svg
+                            class="h-6 fill-current text-gray-600 hover:text-green-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M23.999 23.999H0V0h23.999v23.999zM5.08 18.298H8.64v-8.76H5.08v8.76zM6.857 7.687a1.992 1.992 0 11-.001-3.985 1.992 1.992 0 010 3.985zm12.362 11.611h-3.56v-4.89c0-1.168-.023-2.67-1.625-2.67-1.625 0-1.874 1.271-1.874 2.582v5.977h-3.56v-8.76h3.357v1.377h.048c.47-.89 1.618-1.832 3.315-1.832 3.545 0 4.2 2.333 4.2 5.369v6.846z" />
+                        </svg></a>
+                    <a class="link" href="#" data-tippy-content="@instagram_handle"><svg
+                            class="h-6 fill-current text-gray-600 hover:text-green-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>Instagram</title>
+                            <path
+                                d="M0 11.53v.92a6.47 6.47 0 0 0 6.47 6.47h.92a6.47 6.47 0 0 0 6.47-6.47v-.92a6.47 6.47 0 0 0-6.47-6.47h-.92A6.47 6.47 0 0 0 0 11.53zm12.46-3.71a3.53 3.53 0 1 1 0 7.06 3.53 3.53 0 0 1 0-7.06zM21.71 0h-19.42A2.29 2.29 0 0 0 .001 2.29v19.42A2.29 2.29 0 0 0 2.29 24h19.42a2.29 2.29 0 0 0 2.29-2.29v-19.42A2.29 2.29 0 0 0 21.71 0z" />
+                        </svg></a>
+                </div>
+                <div class="mt-4 lg:mx-auto">
+                    <p class="text-sm">You have a project? Or you just want to chat? <a href="#"
+                            class="font-bold no-underline text-green-700 hover:text-green-900">Let's
+                            work together!</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Img Col-->
+        <div class="w-full lg:w-2/5">
+            <!-- Big profile image for side bar (desktop) -->
+            <img src="resources/Elon_Musk.jpg"
+                class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+            <!-- Image from Unsplash-->
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+<section class="bg-green-700 py-8">
+    <div class="container mx-auto px-2 pt-4 pb-12 text-white">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">My Projects</h1>
+        <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <!-- Project Cards -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6">
+                <div class="bg-white border rounded-lg shadow-xl h-full">
+                    <img src="resources/android.jpeg" class="w-full rounded-t-lg">
+                    <div class="p-6">
+                        <h2 class="font-semibold text-lg text-gray-800">Project 1</h2>
+                        <p class="mt-2 text-gray-600">Embark on a journey of connection and collaboration as I develop an innovative app uniting like-minded individuals. Through meticulous planning and coding, I aim to create a platform that fosters meaningful connections based on shared interests, goals, and passions. Stay tuned as I strive to empower users to engage, inspire, and collaborate within a vibrant community of individuals who share their mindset.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-700 hover:underline">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6">
+                <div class="bg-white border rounded-lg shadow-xl h-full">
+                    <img src="resources/desktop.jpeg" class="w-full rounded-t-lg">
+                    <div class="p-6">
+                        <h2 class="font-semibold text-lg text-gray-800">Project 2</h2>
+                        <p class="mt-2 text-gray-600">Discover the future of college management with my ongoing project: a comprehensive desktop application integrating library, hostel, and student management seamlessly. Through meticulous design and coding, streamline administrative tasks, empower staff, and enhance student experiences. Experience efficiency, integration, and innovation in college administration like never before.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-700 hover:underline">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6">
+                <div class="bg-white border rounded-lg shadow-xl h-full">
+                    <img src="resources/iot.jpeg" class="w-full rounded-t-lg">
+                    <div class="p-6">
+                        <h2 class="font-semibold text-lg text-gray-800">Project 3</h2>
+                        <p class="mt-2 text-gray-600">Indulge in the future of home living with our IoT Home Automation project, featuring Arduino Nano integration. My contributed C code ensures seamless control of lights, appliances, and security systems, empowering you with convenience and efficiency. Elevate your lifestyle effortlessly with personalized automation and real-time monitoring.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-700 hover:underline">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6">
+                <div class="bg-white border rounded-lg shadow-xl h-full">
+                    <img src="resources/algo.jpeg" class="w-full rounded-t-lg">
+                    <div class="p-6">
+                        <h2 class="font-semibold text-lg text-gray-800">Project 4</h2>
+                        <p class="mt-2 text-gray-600">Lorem ipsum dolor Within the ongoing development of the connecting app, my central focus remains on refining the machine learning algorithms. Through continuous experimentation and optimization, I'm committed to enhancing the app's ability to match users based on their interests and mindset. By delving deeper into data analysis and algorithmic refinement, I aim to create a more personalized and effective platform for fostering meaningful connections. As I continue to iterate and innovate, my dedication lies in ensuring that the app remains at the forefront of facilitating genuine and impactful interactions among its users..</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-700 hover:underline">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+  <div class="container">
+    <p>&copy; 2024 Company Name. All rights reserved.</p>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+
+</html>
