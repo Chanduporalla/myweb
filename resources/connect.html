@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="resources/styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("porallachandu@gmail.com"); // Replace 'your_user_id' with your actual user ID from EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Send Your Thoughts</h1>
+        <form id="emailForm" class="form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Thoughts:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Email</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
