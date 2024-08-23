@@ -3,32 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Email</title>
-    <link rel="stylesheet" href="resources/styles.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("porallachandu@gmail.com"); // Replace 'your_user_id' with your actual user ID from EmailJS
-        })();
-    </script>
+    <title>Connect with Me</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #808080, #ffffff);
+            color: #000000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .profile-section {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+        }
+
+        .profile-section h2 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .connect-section {
+            flex: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .giphy-container {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 3pc;
+        }
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 3pc;
+        }
+
+        .connect-links {
+            margin-top: 20px;
+        }
+
+        .connect-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .connect-links a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Send Your Thoughts</h1>
-        <form id="emailForm" class="form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Your Thoughts:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Email</button>
-        </form>
-        <p id="status"></p>
+        <div class="profile-section">
+            <img src="resources/mr_robot.jpeg" alt="Profile Picture">
+            <h2>Poralla Chandu</h2>
+            <p> The hardest choices require the strongest wills.</p>
+        </div>
+        <div class="connect-section">
+            <div class="giphy-container">
+                <iframe src="https://giphy.com/embed/ftXMlzefZ1FCzFhLu4" allowFullScreen></iframe>
+            </div>
+            <div class="connect-links">
+                <h2>Connect with Me</h2>
+                <a href="mailto:porallachandu@gmail.com">Email Me</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+                <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
